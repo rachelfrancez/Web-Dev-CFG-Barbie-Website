@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>DollData.com A-Z</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon 2.png">
+<!--Bootstrap Imported-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<!--Google Fonts--> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">  
+<!--CSS-->     
+        <link href="styles.css" rel="stylesheet">
+<!--Burger-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+
+        <!--NAVIGATION-->
+        
+    <div class="desktop-navigation-container">
+        <h2 class="nav-logo">DollData.com</h2>
+        <nav class="nav-links">
+
+            <a href="index.html" class="nav-link">Home</a>
+            <div id="drop-content">
+            <a href="coming-soon.html" class="nav-link drop-button">Dolls</a>
+                
+                <div class="dropdown-links">
+                    <a class="dropdown-link" href="list-by-year.html">By Year</a>
+                    <a class="dropdown-link" href="list-a-z.html">A-Z</a>
+                </div>
+            </div>
+            
+            <a href="#" class="nav-link">About</a>
+            <a href="index.html#contact-header" class="nav-link">Contact</a>
+        </nav>
+    </div>    
+
+    <div class="mobile-navigation">
+        <h2 class="nav-logo">DollData.com</h2>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobile-nav-links" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fa fa-bars"></span>
+        </button>
+        <!--note, currently bootstrap being used for toggle controls (see mobile-nav-links other classes) - in future editions intend to code this from scratch-->
+      
+    </div>
+    <div class="collapse navbar-collapse mobile-nav-links" id="mobile-nav-links">
+            <a class="mobile-link" href="index.html">Home</a>
+            <a class="mobile-link" href="list-by-year.html">Dolls By Year</a>
+            <a class="mobile-link" href="list-a-z.html">Dolls A-Z</a>     
+            <a class="mobile-link" href="coming-soon.html">About</a>
+            <a class="mobile-link" href="index.html#contact-header">Contact</a>
+    </div>
+   
+    <div class="section-content" id="whoops">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+            <h1>Whoops!</h1>
+            <p>Looks like there's nothing here yet! But come back soon, we're working on it!</p>
+            <button class="button" id="whoops-button">Go Back</button>
+           </div> 
+
+          <script type="text/javascript">
+          
+          function goBack(){
+            window.history.back();
+          }
+
+          const backbutton = document.getElementById("whoops-button");
+
+          backbutton.addEventListener("click", goBack);
+
+          </script>
+
+           <div class="col-lg-5">
+            <img class="img-fluid" src="images/BarbieComputer.jpeg">
+            </div>
+           </div>
+        </div>
+    </div>
+
+
+
+
+
+
+</body>
+
+<footer class="footer">
+    <div class="creation-info row row-cols-1">
+    <div class="col">
+    <p>created by rachel francez boyling 2023.</p>
+    </div>
+    <div class="col">
+    <p>a project for CFG introduction to web development.</p>
+    </div>
+    </div>
+    <div class="icon-row col">
+        <a target="_blank" href="https://en-gb.facebook.com/"><img class="social-icon" src="images/facebooklogo.png" alt="the facebook logo"/></a>
+        <a target="_blank" href="https://www.instagram.com/"><img class="social-icon" src="images/instagramlogo.png" alt="the instagram logo"/></a>
+        <a target="_blank" href="https://www.tumblr.com/"><img class="social-icon" src="images/tumblrlogo.png" alt="the tumblr logo"/></a>
+        <a target="_blank" href="https://twitter.com/"> <img class="social-icon" src="images/twitterlogo.png" alt="the twitter logo"/></a>
+    </div>
+    <div class="creation-info row">
+    <div class="col-12 footer-text">
+        <p>no copyright infringement intended.</p>
+    </div>
+    </div>
+</footer>
+
+</html>
