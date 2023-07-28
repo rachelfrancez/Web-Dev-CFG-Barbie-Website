@@ -9,7 +9,6 @@ footer{
     color:#F9F4F0;
     font-style: bold;
     font-size: 0.9em;
-    
     padding: 10px 5px;
 }
 
@@ -196,7 +195,7 @@ hr{
     width:100%;
     margin: 0;
     aspect-ratio: 16/9;
-    /*keeps broken imgs from altering layout*/
+    /*keeps broken imgs from altering layout i think*/
 }
 
 #hero-content-carousel img{
@@ -213,7 +212,7 @@ hr{
     z-index: 1;
     position: absolute;
     overflow: auto; 
-    /*REMEMBER OVERFLOW TO KEEP CONTaINER SIZE*/
+    /*REMEMBER OVERFLOW TO KEEP CONTAINER SIZE*/
 }
 
 .overlay-logo img{
@@ -245,7 +244,7 @@ hr{
     padding: 5px 10px;
 }
 
-/*YUMMY CONTENT*/
+/*CONTENT*/
 
 .header{
     background-color: #E964AD;
@@ -266,7 +265,6 @@ hr{
     box-sizing: border-box;
     padding: 10px;
     overflow: hidden;
-    
 }
 
 #feature-content{
@@ -302,8 +300,8 @@ hr{
     box-sizing: border-box;
     padding: auto;
     margin-bottom: 0;
-    
 }
+
 .feature-image img{
     height: 450px;
     width:250px;
@@ -344,6 +342,7 @@ hr{
     border-radius: 5px;
     
 }
+
 #about-text{
     background-color: #F9F4F0;
     padding: 5px 10px;
@@ -361,12 +360,14 @@ hr{
    object-fit:contain;
    margin: 10px auto;
 }
+
 .image-container{
     margin: auto;
     display: flex;
     overflow: hidden;
     object-fit: contain;
 }
+
 /*FORM*/
 
 #contact-content{
@@ -451,9 +452,7 @@ input, textarea{
     display: block;
 }
 
-
-
-
+/*FOOTER*/
 
 .creation-info{
     text-align: center;
@@ -497,7 +496,6 @@ input, textarea{
     margin: auto;
     background-color: #F9F4F0;
     border-radius: 5px;
-
 }
 
 .list-image{
@@ -533,10 +531,13 @@ input, textarea{
    box-shadow: 1px 1px 5px #1E1C1D33;
     border:2px solid #E0218A;
 }
+
 /*.list-images::after{
     content: "";
     width: 150px;
-}*/
+}
+
+NOTE: also pre-bootstrap*/
 
 .list-title{
     font-weight: bold;
@@ -674,15 +675,9 @@ input, textarea{
     #hi-barbie img{
         display: none;
     }
-
-   
-
-    
-
 }
 
 @media only screen and (max-width:400px){
-    
     .list-images{
         display: flex;
         flex-flow: column wrap;
